@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+     <div class="col-lg-6">
+                                <div class="d-flex h-100">
+                                    <div class="flex-shrink-0">
+                                        <img class="img-fluid" src={{cust.img.url}} alt="" style="width: 150px; height: 85px;">
+                                        <h4 class="bg-dark text-primary p-2 m-0">${{cust.price}}</h4>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
+                                        <h5 class="text-uppercase">{{cust.name}}</h5>
+                                        <span>{{cust.bio}}</span>
+                                    </div>
+                                </div>
+                            </div>
+{% endblock content %}

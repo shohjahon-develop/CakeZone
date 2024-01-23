@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+   <div class="testimonial-item bg-dark text-white border-inner p-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="img-fluid flex-shrink-0" src={{says.img.url}} style="width: 60px; height: 60px;">
+                        <div class="ps-3">
+                            <h4 class="text-primary text-uppercase mb-1">{{says.name}}</h4>
+                            <span>{{says.job}}</span>
+                        </div>
+                    </div>
+                    <p class="mb-0">{{says.bio}}
+                    </p>
+                </div>
+{% endblock content %}
